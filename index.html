@@ -33,7 +33,7 @@
   </script>
 </head>
 <body class="font-lato">
-  <header class="md:container md:mx-auto">
+  <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
     <!-- nav ber section starts here -->
     <div class="navbar bg-primary rounded-full">
       <div class="navbar-start">
@@ -51,17 +51,17 @@
         <a class="normal-case text-3xl text-white">Fruit Burst</a>
       </div>
       <div class="navbar-end">
-        <div class="form-control flex">
+        <div class="form-control">
           <input type="text" placeholder="Search Here" class="input input-bordered w-24 md:w-auto"/> 
         </div>
       </div>
     </div>
     <!-- nav ber section ends here -->
     <!-- slider section starts here -->
-    <div class="carousel w-full rounded-lg mt-12">
+    <div class="carousel  w-full lg:h-[600px] rounded-lg mt-12">
       <!-- slider-one -->
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+      <div id="slide1" class="carousel-item relative  w-full ">
+        <div class="hero min-h-screen  lg:w-[1440px]" style="background-image: url(./images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -137,6 +137,145 @@
     </div>
     <!-- slider section ends here -->
   </header>
+  <main>
+    <!-- deal of the day section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+      <div>
+        <!-- main div -->
+        <div class="flex flex-col text-center items-center md:flex-row">
+          <!-- parent div -->
+          <div class="flex-1 space-y-5">
+            <!-- headline -->
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black">Deal of the day</h3>
+              <p class=" text-gray-400">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <!-- countdown -->
+          <div class="grid grid-flow-col  text-center auto-cols-max flex-1 justify-end font-bold text-black">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl ">
+                <span style="--value:15;"></span>
+                <img class="w-6" src="./images/Frame.svg" alt="">
+              </span>
+              days 
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+                <img class="w-6" src="./images/Frame.svg" alt="">
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+                <img class="w-6" src="./images/Frame.svg" alt="">
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div> 
+        <!-- card section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <!-- first-card -->
+          <div class="card bg-base-100 border-2 shadow-xl rounded-lg border-black mt-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="Apple" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-gray-400">Apples</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+              </div>
+              <div class="">
+                <button class="text-primary mt-3 font-bold">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card bg-base-100 border-2 shadow-xl rounded-lg border-black mt-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit7.png" alt="Apple" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-gray-400">Orange</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+              </div>
+              <div class="">
+                <button class="text-primary mt-3 font-bold">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card bg-base-100 border-2 shadow-xl rounded-lg border-black mt-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit8.png" alt="Apple" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-gray-400">Red Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+              </div>
+              <div class="">
+                <button class="text-primary mt-3 font-bold">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- four card -->
+          <div class="card bg-base-100 border-2 shadow-xl rounded-lg border-black mt-5">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit9.png" alt="Apple" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-gray-400">Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"/>
+              </div>
+              <div class="">
+                <button class="text-primary mt-3 font-bold">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <button class="bg-primary uppercase text-xl font-bold py-3 px-5"> shop all</button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
 
