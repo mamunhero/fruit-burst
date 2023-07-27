@@ -22,6 +22,22 @@
   <script>
     tailwind.config = {
       theme: {
+      screens: {
+          'sm': '425px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+        },
         extend: {
           colors: {
             clifford: '#da373d',
@@ -35,7 +51,7 @@
 <body class="font-lato">
   <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
     <!-- nav ber section starts here -->
-    <div class="navbar bg-primary rounded-full">
+    <div class="navbar bg-primary rounded-full sm:invisible md:visible lg:visible">
       <div class="navbar-start">
         <div class=" hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-white">
@@ -51,8 +67,29 @@
         <a class="normal-case text-3xl text-white">Fruit Burst</a>
       </div>
       <div class="navbar-end">
-        <div class="form-control">
+        <div class="form-control relative">
           <input type="text" placeholder="Search Here" class="input input-bordered w-24 md:w-auto"/> 
+          <span class="absolute right-2 top-1/2 -translate-y-1/2 text-xl"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+      </div>
+    </div>
+     <!-- sm nav ber -->
+     <div class="navbar bg-base-100 sm:visible md:invisible lg:invisible">
+      <div class="navbar-first">
+        <img class="w-8 mr-5" src="./images/logo.png" alt="">
+        <a class="normal-case text-xl text-black">Fruit Burst</a>
+      </div>   
+      <div class="navbar-end">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -141,7 +178,7 @@
   <main>
     <section class="max-w-screen-lg mx-auto absolute -mt-32  left-0 right-0 ">
       <!-- fruit image -->
-      <div class="grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 bg-white rounded-lg shadow-lg">
+      <div class="grid grid-cols-1  sm:invisible md:invisible lg:grid-cols-5 bg-white rounded-lg shadow-lg">
         <!-- first image --> 
         <div class="card py-3">
           <figure><img src="./images/fruit1.png" alt="" /></figure>
@@ -174,7 +211,7 @@
     <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-16 my-10">
       <div>
         <!-- main div -->
-        <div class="flex flex-col  md:flex-row">
+        <div class="flex flex-col sm:text-center md:flex-row">
           <!-- parent div -->
           <div class="flex-1 space-y-5">
             <!-- headline -->
@@ -213,7 +250,7 @@
           </div>
         </div> 
         <!-- card section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
           <!-- first-card -->
           <div class="card bg-base-100 border-2 shadow-xl rounded-lg border-black mt-5">
             <figure class="px-10 pt-10">
@@ -379,11 +416,11 @@
     <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
     <!-- Why Choose Us -->
     <div class="text-center">
-      <h3 class="text-2xl  md:text-3xl lg:text-4xl font-bold text-black">Why Choose Us</h3>
+      <h3 class="sm:text-xl  md:text-3xl lg:text-4xl font-bold text-black">Why Choose Us</h3>
       <p class=" w-[615px] mx-auto mt-5 text-gray-400">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
     </div>
     <div class="flex flex-col md:flex-row justify-between gap-5 my-10 p-5">
-      <div class="flex-1 order-1">
+      <div class="flex-1 sm:order-2 md:order-1">
         <div>
           
         </div>
@@ -405,29 +442,28 @@
           <p class="w-[354px] text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
-      <div class="flex-1 order-2">
+      <div class="flex-1 sm:order-1 md:order-2">
         <img src="./images/whychoose1.png" alt="">
       </div>
-      <div class="flex-1 order-3 text-right">
+      <div class="flex-1 sm:order-3 md:order-3 sm:text-left   md:text-right">
         <div class="bg-gray-500">
           
         </div>
         <div>
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Dedicated Team</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; margin-left: auto;">
+          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;">
           <p class="w-[354px] text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
         <div></div>
         <div class="">
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Fresh is Best</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; margin-left: auto;">
+          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;">
           <p class="w-[354px] text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
         <div></div>
         <div>
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Gift Certificates</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; margin-left: auto;
-          ">
+          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;>
           <p class="w-[354px] text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
