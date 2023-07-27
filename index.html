@@ -58,7 +58,7 @@
     </div>
     <!-- nav ber section ends here -->
     <!-- slider section starts here -->
-    <div class="carousel  w-full lg:h-[600px] rounded-lg mt-12 bg-fixed">
+    <div class="carousel  w-full lg:h-[600px] rounded-lg mt-12 bg-fixed relative">
       <!-- slider-one -->
       <div id="slide1" class="carousel-item relative  w-full ">
         <div class="hero min-h-screen  lg:w-[1440px]" style="background-image: url(./images/banner1.png);">
@@ -135,11 +135,43 @@
         </div>
       </div>
     </div>
+
     <!-- slider section ends here -->
   </header>
   <main>
+    <section class="max-w-screen-lg mx-auto absolute -mt-32  left-0 right-0 ">
+      <!-- fruit image -->
+      <div class="grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 bg-white rounded-lg shadow-lg">
+        <!-- first image --> 
+        <div class="card py-3">
+          <figure><img src="./images/fruit1.png" alt="" /></figure>
+            <p class="font-400 text-center">Strawberry</p>
+          </div>
+          <!-- second image -->
+          <div class="card py-3">
+            <figure><img src="./images/fruit2.png" alt="" /></figure>
+              <p class="font-400 text-center">Orange</p>
+            </div>
+            <!-- third image -->
+            <div class="card py-3">
+              <figure><img src="./images/fruit3.png" alt="" /></figure>
+                <p class="font-400 text-center">Mango</p>
+            </div>
+            <!-- four image -->
+            <div class="card py-3">
+              <figure><img src="./images/fruit4.png" alt="" /></figure>
+                <p class="font-400 text-center">Strawberry</p>
+            </div>
+            <!-- five image -->
+            <div class="card py-3">
+              <figure><img src="./images/fruit5.png" alt="" /></figure>
+                <p class="font-400 text-center">Mango</p>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- deal of the day section -->
-    <section class="max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 my-10">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-16 my-10">
       <div>
         <!-- main div -->
         <div class="flex flex-col  md:flex-row">
