@@ -51,7 +51,7 @@
 <body class="font-lato">
   <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
     <!-- nav ber section starts here -->
-    <div class="navbar bg-primary rounded-full sm:invisible md:visible lg:visible">
+    <div class="navbar bg-primary rounded-full sm:hidden md:flex lg:flex">
       <div class="navbar-start">
         <div class=" hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-white">
@@ -74,7 +74,7 @@
       </div>
     </div>
      <!-- sm nav ber -->
-     <div class="navbar  sm:visible md:invisible lg:invisible">
+     <div class="navbar  sm:flex md:hidden lg:hidden">
       <div class="navbar-start">
         <img class="w-8 mr-5" src="./images/logo.png" alt="">
         <a class="normal-case text-xl text-black">Fruit Burst</a>
@@ -268,8 +268,8 @@
                 checked/>
                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-primary"/>
               </div>
-              <div class="modal">
-                <button class="text-primary mt-3 font-bold">Details</button>
+              <div class="">
+                
               </div>
             </div>
           </div>
@@ -346,7 +346,7 @@
       </div>
     </section>
     <!-- meet the team section -->
-    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
       <div class="hero lg:min-h-screen" style="background-image: url(./images/banner1.png);">
         <div class="hero-overlay bg-opacity-60 "></div>
         <div class="hero-content text-center text-neutral-content">
@@ -354,7 +354,7 @@
             <h1 class="mb-5 text-2xl md:text-3xl  lg:text-4xl font-bold">Meet the team section</h1>
             <p class="mb-5 w-[615px] mx-auto ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             <!-- card section -->
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               <!-- first card -->
               <div class="card">
                 <figure><img src="./images/member1.png" alt="member1" /></figure>
