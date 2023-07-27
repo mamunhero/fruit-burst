@@ -74,8 +74,8 @@
       </div>
     </div>
      <!-- sm nav ber -->
-     <div class="navbar bg-base-100 sm:visible md:invisible lg:invisible">
-      <div class="navbar-first">
+     <div class="navbar  sm:visible md:invisible lg:invisible">
+      <div class="navbar-start">
         <img class="w-8 mr-5" src="./images/logo.png" alt="">
         <a class="normal-case text-xl text-black">Fruit Burst</a>
       </div>   
@@ -98,7 +98,7 @@
     <div class="carousel  w-full lg:h-[600px] rounded-lg mt-12 bg-fixed relative">
       <!-- slider-one -->
       <div id="slide1" class="carousel-item relative  w-full ">
-        <div class="hero min-h-screen  lg:w-[1440px]" style="background-image: url(./images/banner1.png);">
+        <div class="hero" style="background-image: url(./images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -178,7 +178,7 @@
   <main>
     <section class="max-w-screen-lg mx-auto absolute -mt-32  left-0 right-0 ">
       <!-- fruit image -->
-      <div class="grid grid-cols-1  sm:invisible md:invisible lg:grid-cols-5 bg-white rounded-lg shadow-lg">
+      <div class="grid grid-cols-1  sm:invisible md:visible lg:grid-cols-5 bg-white rounded-lg shadow-lg">
         <!-- first image --> 
         <div class="card py-3">
           <figure><img src="./images/fruit1.png" alt="" /></figure>
@@ -268,7 +268,7 @@
                 checked/>
                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-primary"/>
               </div>
-              <div class="">
+              <div class="modal">
                 <button class="text-primary mt-3 font-bold">Details</button>
               </div>
             </div>
@@ -347,14 +347,14 @@
     </section>
     <!-- meet the team section -->
     <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-      <div class="hero w-1/4 md:w-2/4 lg:w-full h-1/4 md:h-2/4 lg:min-h-screen" style="background-image: url(./images/banner1.png);">
+      <div class="hero lg:min-h-screen" style="background-image: url(./images/banner1.png);">
         <div class="hero-overlay bg-opacity-60 "></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="">
             <h1 class="mb-5 text-2xl md:text-3xl  lg:text-4xl font-bold">Meet the team section</h1>
             <p class="mb-5 w-[615px] mx-auto ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             <!-- card section -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               <!-- first card -->
               <div class="card">
                 <figure><img src="./images/member1.png" alt="member1" /></figure>
@@ -446,24 +446,21 @@
         <img src="./images/whychoose1.png" alt="">
       </div>
       <div class="flex-1 sm:order-3 md:order-3 sm:text-left   md:text-right">
-        <div class="bg-gray-500">
-          
-        </div>
         <div>
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Dedicated Team</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;">
+          <hr style="width: 30%; border-width: 1px; border-color:black; margin-left: auto;">
           <p class="w-[354px] text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
         <div></div>
         <div class="">
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Fresh is Best</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;">
+          <hr style="width: 30%; border-width: 1px; border-color:black; margin-left: auto;">
           <p class="w-[354px] text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
         <div></div>
         <div>
           <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold">Gift Certificates</h3>
-          <hr style="width: 30%; border-width: 1px; border-color:black; sm:margin-left:0 ;md:margin-left: auto;>
+          <hr style="width: 30%; border-width: 1px; border-color:black;margin-left: auto;>
           <p class="w-[354px] text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
